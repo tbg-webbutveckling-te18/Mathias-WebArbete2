@@ -98,3 +98,48 @@ for(var i = 0; i < 5; i++) {
     }
     document.writeln('<br>')
 }
+
+
+for(var i = 0; i <= 10; i++) {
+    for(var j = 0; j <= 10; j++) {
+        var result = i * j;
+        document.writeln(i+'*'+j+'='+result+'<br>')
+    }
+}
+
+document.writeln('-----------------------------------------------------------------------------------<br>')
+
+// Create an array to hold your top choices (colors, food, games, presidents, whatever).
+// For each choice, log to the screen a string like: "My #1 choice is blue."
+// Bonus: Change it to log "My 1st choice, "My 2nd choice", "My 3rd choice", 
+// picking the right suffix for the number based on what it is.
+
+var codeFavGame = ['Destiny 2', 'Yakuza 0', 'Halo']
+var len = codeFavGame.length;
+for(var i = 0; i < len; i++) {
+    var number = i + 1
+    document.writeln('My #'+number+' choice is '+codeFavGame[i]+'<br>')
+}
+
+document.writeln('-----------------------------------------------------------------------------------<br>')
+
+
+
+for(var i = 0; i < len; i++) {
+    var number = i + 1
+    if (number == 1) {
+        document.writeln('My '+number+'st choice is '+codeFavGame[i]+'<br>')
+    }
+    else if (number == 2) {
+        document.writeln('My '+number+'nd choice is '+codeFavGame[i]+'<br>')
+    }
+    else if (number == 3) {
+        document.writeln('My '+number+'rd choice is '+codeFavGame[i]+'<br>')
+    }
+    else {
+        document.writeln('Thats all! <br>')
+    }
+}
+
+document.writeln('-----------------------------------------------------------------------------------<br>')
+
