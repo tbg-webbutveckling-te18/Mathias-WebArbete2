@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: red;
+}
+
+header {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+    width: 98.9vw;
+    min-height: 40vh;
+
+    padding: 20px;
+
+
+    box-shadow: 0px 4px 4px black;
+}
+
+header h1 {
+    font-size: 64px;
+    /* line-height: 100px; */
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+header button {
+    width: 20vw;
+    height: 10vh;
+
+    border-radius: 20px;
+    outline: 0;
+
+    font-size: 22px;
+    font-weight: 200;
+
+    transition: all .3s;
+}
+
+header button:hover {
+    cursor: pointer;
+    background-color: orange;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+}
+
+nav {
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    height: 100vh;
+    flex: 0.5;
+}
+
+ul {
+    background-color: teal;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+ul li {
+    border-bottom: 2px solid white;
+    display: flex;
+    height: 50px;
+}
+
+ul li a {
+    color: #fff;
+    font-size: 22px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all .3s;
+}
+
+ul li a:hover {
+    background-color: orange;
+}
+
+main {
+    flex: 1;
+}
+
+.main-content {
+    height: 400px;
+
+    display: flex;
+
+}
+
+.main-child {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #123;
+    border: 1px solid orange;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 42px;
+}
+
+.main-child h1 {
+    
+    font-weight: 100;
+}
+
+.main-content .a {
+    background-image: url(../images/canada.jpg);
+}
+
+.main-content .b {
+    background-image: url(../images/stockholm.jpg);
+}
+
+footer {
+    height: 300px;
+    background-color: #05c46b;
+    border-top: 2px solid gray;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    color: white;
+}
+
+footer p {
+    font-size: 20px;
+}
+
+/* Special classes */
+
+.special {
+    font-size: 108px;
+    color: blue;
+}
+
+.highlighted {
+    background-color: blue;
+}

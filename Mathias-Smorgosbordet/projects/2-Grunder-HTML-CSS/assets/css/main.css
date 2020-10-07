@@ -1,0 +1,49 @@
+body {
+    background-color: rgba(100, 25, 50, 0.5);
+}
+
+h1 {
+    color: rgba(69, 69, 69, 0.5);
+    font-size: 35px;
+}
+
+p {
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+ul {
+    /* background-color: aqua; */
+    list-style-type: none;
+    padding: 0px;
+}
+
+/* 
+    # = id 
+    . = class
+*/
+ul#subpages li:first-child {
+    /* color: #fff; */
+    text-shadow: 1px 1px 1px #000; /* X Y blur color */
+    text-align: center;
+    font-size: 20px;
+}
+
+ul#subpages a {
+    text-decoration: none;
+    color: white;
+}
+
+ul#subpages a:hover {
+    font-weight: bold;
+    color: red;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a {
+    color: palegreen;
+}

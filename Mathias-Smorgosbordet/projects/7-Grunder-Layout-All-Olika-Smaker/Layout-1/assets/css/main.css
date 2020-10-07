@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+html {
+    min-height: 100%;
+}
+
+body {
+    background-color: black;
+    min-height: 100%;
+}
+
+header.namePlate {
+    background-color: red;
+}
+
+.menuLinks {
+    background-color: red;
+}
+
+.gridContainerfather {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    min-width: 50px;
+    min-height: 100px;
+    margin: auto;
+}
+
+.gridContainerone {
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 200px;
+    grid-gap: 160px;
+    
+    min-width: 50px;
+    min-height: 100px;
+    
+    margin: auto;
+}
+
+.gridContainertwo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 200px;
+    grid-gap: 10px;
+    
+    min-width: 50px;
+    min-height: 1px;
+    
+    margin: auto;
+}
+
+.largeBoxes {
+    width: 600px;
+    height: 250px;
+    
+    background-color: green;
+}
+
+.mediumBoxes {
+    width: 450px;
+    height: 180px;
+    background-color: red;
+}
+
+.tinyboxesFather {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.tinyBoxes {
+    background-color: yellow;
+    width: 150px;
+    height: 110px;
+}
+
+.longtinyBox {
+    width: 450px;
+    height: 100px;
+    background-color: purple;
+}
+
+.cpStuff {
+    background-color: red;
+}

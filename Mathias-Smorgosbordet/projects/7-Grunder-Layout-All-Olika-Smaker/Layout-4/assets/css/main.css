@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+html {
+    min-height: 100%;
+}
+
+body {
+    background-color: mediumvioletred;
+    min-height: 100%;
+    justify-content: space-around, space-between;
+}
+
+.loginSection {
+    display: flex;
+    justify-content: center, space-between;
+    align-content: center, space-between;
+    padding-left: 600px;
+    margin: 0px;
+    height: 50px;
+}
+
+.writeBox {
+    border: 5px solid black;
+    width: 150px;
+    height: 40px;
+}
+
+.boxesAbove {
+    display: flex;
+    height: 300px;
+}
+
+.logoBox {
+    border: 5px solid black;
+    width: 250px;
+}
+
+.nameBox {
+    border: 5px solid black;
+    width: 850px;
+}
+
+.callBox {
+    border: 5px solid black;
+    width: 250px;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 1290px;
+    
+    border: 3px solid black;
+}
+
+.destinationLines {
+    list-style: none;
+}
+
+.writeboxNav {
+    border: 2px solid red;
+    width: 150px;
+}
+
+.bottomBoxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    height: 500px;
+}
+
+.featuredPackage {
+    border: 3px solid black;
+    width: 250px;
+}
+
+.featuredDestinations {
+    border: 3px solid black;
+    width: 780px;
+}
+
+.tinyBoxes {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr;
+}
+
+.timezoneBox {
+    border: 3px solid black;
+}
+
+.adBox {
+    border: 3px solid black;
+}

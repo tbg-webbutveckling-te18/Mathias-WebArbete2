@@ -1,0 +1,33 @@
+html{
+    min-height: 100%;
+}
+
+body {
+background-image: url(../assets/images/Background%20for%20kontakt%20place.jpg)
+}
+
+h1 {
+    color: orange;
+}
+main, main aside, section.kontaktArea {
+    border: 1px solid red;
+    padding: 10px;
+    color: white;
+}
+
+main {
+    display: flex;
+    min-height: 500px;
+}
+
+main aside {
+    flex: 0.5;
+}
+
+section {
+    flex: 2.5;
+}
+
+button {
+    width: 10%;
+}

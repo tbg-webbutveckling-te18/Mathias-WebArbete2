@@ -1,0 +1,39 @@
+html{
+    min-height: 100%;
+}
+
+section.mainBody {
+    border: solid 10px orange;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+section.sectionOne, section.sectionTwo, section.sectionThree, section.sectionFour, section.sectionFive, section.sectionSix, section.sectionSeven, section.sectionEight, section.sectionNine {
+    width: 30%;
+    height: 150px;
+}
+
+section.sectionTwo {
+    border-left: solid 10px orange;
+    border-bottom: solid 10px orange;
+    border-right: 10px solid orange;
+}
+
+section.sectionFour {
+    border-top: solid 10px orange;
+    border-right: solid 10px orange;
+    border-bottom: solid 10px orange;
+}
+
+section.sectionSix {
+    border-top: solid 10px orange;
+    border-left: solid 10px orange;
+    border-bottom: solid 10px orange;
+    width: 38.4%
+}
+
+section.sectionEight {
+    border-right: solid 10px orange;
+    border-top: solid 10px orange;
+    border-left: solid 10px orange;
+}

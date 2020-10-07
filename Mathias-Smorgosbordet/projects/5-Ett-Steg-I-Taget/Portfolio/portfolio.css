@@ -1,0 +1,91 @@
+html{
+    min-height: 100%;
+}
+
+body{
+    background: #141E30;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+main{
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+section {
+    align-content:space-around, space-between;
+    min-height: 100px;
+}
+
+img.portOne, img.portTwo, img.portThree {
+    flex: 1;
+}
+
+img.portFour, img.portFive, img.portSix {
+    flex: 1;
+}
+
+img.portSeven, img.portEight, img.portNine {
+    flex: 1;
+}
+img {
+    transition: all 5s;
+}
+
+img.portOne:hover {
+    box-shadow: 5px 5px 5px black;
+    transform: rotate(180deg);
+
+}
+
+img.portTwo:hover {
+    box-shadow: 5px 5px 5px yellow;
+    transform: rotate(30deg);
+
+}
+
+img.portThree:hover {
+    box-shadow: 5px 5px 5px white;
+    transform: rotate(360deg);
+
+}
+
+img.portFour:hover {
+    box-shadow: 5px 5px 5px gray;
+    transform: rotate(90deg);
+
+}
+
+img.portFive:hover {
+    box-shadow: 5px 5px 5px green;
+    transform: rotate(180deg);
+
+}
+
+img.portSix:hover {
+    box-shadow: 5px 5px 5px pink;
+    transform: rotate(270deg);
+
+}
+
+img.portSeven:hover {
+    box-shadow: 5px 5px 5px orange;
+    transform: rotate(30deg);
+
+}
+
+img.portEight:hover {
+    box-shadow: 5px 5px 5px red;
+    transform: rotate(360deg);
+
+}
+
+img.portNine:hover {
+    box-shadow: 5px 5px 5px purple;
+    transform: rotate(90deg);
+
+}

@@ -1,0 +1,85 @@
+html {
+    min-height: 100%;
+}
+
+body {
+    background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+header {
+    width: 100%; /* standard on a block element */
+    height: 250px;
+    display: flex; /* standard value */
+    justify-content: center; /* main axis */
+    align-items: center; /* cross axis */
+    border: 1px solid white;
+}
+
+header h1 {
+    color: darkturquoise;
+    font-size: 50px;
+    margin: 0;
+}
+
+nav {
+    border: 1px solid yellow;
+}
+
+nav ul#infoFish {
+    display: flex;
+    justify-content: space-around;
+    
+    list-style: none;
+    padding: 0px;
+    margin-left: 0px;
+}
+
+ul#infoFish a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+ul#infoFish li:hover {
+    font-weight: bold;
+    color: aqua;
+    cursor: pointer; /* standard value */
+}
+
+main, main aside, section.deepInfo {
+    border: 1px solid red;
+    padding: 10px;
+    color: white;
+}
+
+main {
+    display: flex;
+    min-height: 500px;
+}
+
+main aside {
+    flex: 1;
+}
+
+section.deepInfo {
+    flex: 2.5;
+}
+
+h2, p, figcaption{
+    color: darkturquoise;
+}
+
+footer {
+    border: 1px solid red;
+    padding: 10px;
+    color: white;
+}
+
+section.copyRight {
+    text-align: center;
+    color: #FFF;
+    font-size: bold;
+}
