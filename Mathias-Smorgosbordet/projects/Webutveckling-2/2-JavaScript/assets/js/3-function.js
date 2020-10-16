@@ -94,7 +94,7 @@ document.writeln('<br>----------------------------------------------------------
 
 
 function kebabToSnake(str) {
-    var snakeCasedStr = str.replace(/-/, '_')
+    var snakeCasedStr = str.replace('-', '_')
     return snakeCasedStr;
 }
 
