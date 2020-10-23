@@ -100,7 +100,89 @@ function kebabToSnake(str) {
 
 document.writeln(kebabToSnake('Hej-jag-heter-Mathias'))
 
-
+/*
+***************************************
+            JS Scope
+***************************************
+*/
+var p = document.getElementById('scopes'); // global scope
+// What happends in the function stays in the function
+// declare
+function localScope() {
+    var x = 1;
+    var localVar = 31;
+    p.innerHTML = localVar;
+}
+// call
+localScope();
+var globalVar = 'This is a global variable';
+p.innerHTML = globalVar;
+p.style.fontSize = '20px';
+p.style.color = '#639';
+function changeGlobalVar() {
+    var x = 2;
+    globalVar = 'Ha ha I got a new value now!';
+    p.innerHTML = globalVar;
+}
+// call
+changeGlobalVar();
+function tricky() {
+    var x = 3;
+    var globalVar = 'Am I a local variable?';
+    p.innerHTML = globalVar;
+}
+// call
+tricky();
+p.innerHTML = globalVar;
+/*
+***************************************
+    JS Scope - muntligt test
+***************************************
+*/
+// Förklara vad som händer
+var num = 8;
+function doMath() {
+    num += 1;
+    if (num % 5 === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+num += 1;
+doMath();
+// Förklara vad som händer
+function hi() {
+    var name = 'Dennis';
+    console.log(name);
+}
+hi();
+function bye() {
+    console.log(name);
+}
+bye();
+/*
+***************************************
+JS functions - higher order functions
+Simple explanation: A function that can take another function as an argument
+***************************************
+*/
+function myTimer() {
+    var d = new Date();
+    var clock = document.getElementById('clock');
+    clock.innerHTML = d.toLocaleTimeString();
+}
+myTimer();
+var seconds = setInterval(myTimer, 1000); // function name and interval in milliseconds
+var btnStopTime = document.getElementsByClassName('stopTime')[0];
+var doomsStr = document.getElementById('doomsMessage');
+btnStopTime.addEventListener('click', function() {
+    clearInterval(seconds);
+    doomsStr.innerHTML = 'Ha Ha! Time is stopped forever!';
+    doomsStr.style.transition = 'all .4s ease';
+    doomsStr.style.fontSize = '60px';
+    doomsStr.style.color = 'crimson';
+});
 
 
 
