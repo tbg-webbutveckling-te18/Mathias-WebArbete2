@@ -180,13 +180,35 @@ btnStopTime.addEventListener('click', function() {
     clearInterval(seconds);
     doomsStr.innerHTML = 'Ha Ha! Time is stopped forever!';
     doomsStr.style.transition = 'all .4s ease';
-    doomsStr.style.fontSize = '60px';
+    doomsStr.style.fontSize = '20px';
     doomsStr.style.color = 'crimson';
 });
 
+// Write a function named tellFortune that:
+// takes 4 arguments: number of children, partner's name, geographic location, job title.
+// outputs your fortune to the screen like so: "You will be a X in Y, and married to Z with N kids."
+// Call that function 3 times with 3 different values for the arguments.
 
+var output = document.getElementById('tellFortune');
+var btnFortune = document.getElementsByTagName('button')[2];
 
+function tellFortune(job, city, partner, kids) {
+    output.innerHTML = `You will be a ${job} in ${city} and married to ${partner} with ${kids} kids`
+}
 
+var jobArr = ['Game designer', 'Web Developer', 'Homeless', 'Youtuber', 'Streamer'];
+var cityArr = ['Lycksele', 'Stockholm', 'New York', 'Moscow', 'Fucking'];
+var partnerArr = ['Kenneth', 'Leif', 'Susan', 'Michelle', 'Igor'];
+var kidsArr = ['0', '1', '2', '3', '4'];
+
+btnFortune.addEventListener('click', function() {
+    var randomJob = jobArr[Math.floor(Math.random() * jobArr.length)];
+    var randomCity = cityArr[Math.floor(Math.random() * cityArr.length)];
+    var randomPartner = partnerArr[Math.floor(Math.random() * partnerArr.length)];
+    var randomKids = kidsArr[Math.floor(Math.random() * kidsArr.length)];
+
+    tellFortune(randomJob, randomCity, randomPartner, randomKids)
+});
 
 
 
