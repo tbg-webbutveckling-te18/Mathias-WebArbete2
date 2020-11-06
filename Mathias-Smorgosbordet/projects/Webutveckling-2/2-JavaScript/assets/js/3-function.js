@@ -210,6 +210,21 @@ btnFortune.addEventListener('click', function() {
     tellFortune(randomJob, randomCity, randomPartner, randomKids)
 });
 
+var output = document.getElementById('dogYears')
+
+function calculateDogAge(puppy, human) {
+    var dogAge = puppy * 7;
+    var humanAge = Math.round(human / 7)
+    output.innerHTML = `<br>Your doggie is ${dogAge} years old in dog years <br>and your human age is ${humanAge}`
+}
+
+calculateDogAge(6, 21);
+
+function calculateSupply(snack, age) {
+    var timeAge = 100 - age;
+    var snackNeeded = Math.round((timeAge * 365) * snack);
+    document.writeln(`<br>You got ${timeAge} years left to live and the amount of snacks to survive is ${snackNeeded}`);
+}
 
 
-
+calculateSupply(2, 21)
