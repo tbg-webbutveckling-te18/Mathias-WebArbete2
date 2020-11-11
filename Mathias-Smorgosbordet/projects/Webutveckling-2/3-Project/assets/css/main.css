@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+html {
+    min-height: 100%;
+}
+
+body {
+    background-color: gray;
+}
+
+header, section.smolLeftbox {
+    border-color: 1px solid black;
+}
+
+header, section.largeMiddlebox {
+    border-color: 1px solid black;
+}
+
+header, section.smolRightbox {
+    border-color: 1px solid black;
+}
