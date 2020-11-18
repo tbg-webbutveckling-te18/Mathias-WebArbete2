@@ -8,5 +8,23 @@ body {
     background-color: gray;
 }
 
+header.ifElse {
+    border: 1px solid black;
+}
+
+main.teachPart {
+    border: 1px solid black;
+}
+
+footer.picPlace {
+    border: 1px solid black;
+}
 
 
+header.forMethod {
+    border: 1px solid black;
+}
+
+main.teachShowpart {
+    border: 1px solid black;
+}
