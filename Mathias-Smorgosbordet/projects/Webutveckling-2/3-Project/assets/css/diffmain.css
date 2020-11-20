@@ -28,3 +28,11 @@ header.forMethod {
 main.teachShowpart {
     border: 1px solid black;
 }
+
+header.functionMethod {
+    border: 1px solid black;
+}
+
+main.teachFunction {
+    border: 1px solid black;
+}

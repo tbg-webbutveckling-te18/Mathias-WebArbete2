@@ -8,11 +8,24 @@
 </head>
 <body>
     <header class="functionMethod">
+        <section>This is the Function Method!</section>
+        <section>In this section its gonna have buttons which changes the background and <br> some uruk quotes from Shadow of War.
+        </section>
     </header>
-    <main>
+    <main class="teachFunction">
     </main>
     <footer>
+        <label for="fname">Press this button for red -></label>
+        <input type="button" onclick="changeBodyBg('red');" id="fname"><br>
+        <label for="lname">Press this button for gray -></label>
+        <input type="button" onclick="changeBodyBg('gray');" id="lname"><br>
+        <label for="bname">Press this button for green -></label>
+        <input type="button" onclick="changeBodyBg('green');" id="bname"><br>
+        <label for="aname">Press this button for orange -></label>
+        <input type="button" onclick="changeBodyBg('orange');" id="aname"><br>
     </footer>
+    <button class="urukQuote">Press this button for uruk quote</button>
+    <p id="tellUruk"></p>
     <script src="../assets/js/3-project.js"></script>
 </body>
 </html>
