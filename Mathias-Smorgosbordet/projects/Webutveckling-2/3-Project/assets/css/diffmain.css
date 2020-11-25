@@ -36,3 +36,11 @@ header.functionMethod {
 main.teachFunction {
     border: 1px solid black;
 }
+
+header.objectMethod {
+    border: 1px solid black;
+}
+
+main.objectTeaching {
+    border: 1px solid black;
+}

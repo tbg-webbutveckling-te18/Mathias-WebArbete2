@@ -8,8 +8,29 @@
 </head>
 <body>
     <header class="objectMethod">
+        <section>Welcome to Object method! <br>
+            This will show some of object methods you can do in Javascript. <br>
+            Below the boxes gonna show some text writing and everytime you refresh this site you get a different popup message.
+        </section>
     </header>
-    <main>
+    <main class="objectTeaching">
+        <section>This is what i used on the object methods: <br>
+            var messageArr = ['This is a message', 'Lucky us!', 'Well... fate hasnt been kind to you. Look who its brought you to']<br>
+
+            var user = { <br>
+                name: 'Bollocks', <br>
+                age: 69, <br>
+                city: 'Fucking', <br>
+                isEvil: false, <br>
+                shoutout: function(){ <br>
+                    var randomMessage = messageArr[Math.floor(Math.random() * messageArr.length)] <br>
+                    alert(randomMessage) <br>
+                } <br>
+            } <br>
+
+            document.writeln(`My name is ${user.name} and I am ${user.age} years old and I live in ${user.city}`) <br>
+            user.shoutout(); <br>
+        </section>
     </main>
     <footer>
     </footer>
