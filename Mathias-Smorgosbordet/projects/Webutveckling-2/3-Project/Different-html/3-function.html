@@ -13,6 +13,41 @@
         </section>
     </header>
     <main class="teachFunction">
+        <h5>
+            This is a button selection for background color: <br>
+            HTML: <br>
+            label for="fname">Press this button for red ->/label <br>
+            input type="button" onclick="changeBodyBg('red');" id="fname"<br>
+            label for="lname">Press this button for gray ->/label <br>
+            input type="button" onclick="changeBodyBg('gray');" id="lname"<br>
+            label for="bname">Press this button for green ->/label <br>
+            input type="button" onclick="changeBodyBg('green');" id="bname"<br>
+            label for="aname">Press this button for orange ->/label <br>
+            input type="button" onclick="changeBodyBg('orange');" id="aname"<br>
+            JS: <br>
+            function changeBodyBg(color) {<br>
+                document.body.style.background = color;<br>
+            }<br>
+            This is a button that says Uruk quotes from Shadow of War: <br>
+            HTML: <br>
+            button Press this button for uruk quote /button <br>
+            p id="tellUruk"/p <br>
+            JS: <br>
+            var output = document.getElementById('tellUruk') <br>
+            var btnUruk = document.getElementsByTagName('button')[0]; <br>
+
+            function tellUruk(uruk) { <br>
+                output.innerHTML = `Heres a quote: ${uruk}` <br>
+            }<br>
+
+            var urukArr = ['They call me the tarkslayer. I kill tarks. And... youre a tark.', 'What do you think would happen if i touched it.', 'Oh, that is my shadow, hello there!']; <br>
+
+            btnUruk.addEventListener('click', function(){<br>
+                var randomUruk = urukArr[Math.floor(Math.random() * urukArr.length)];<br>
+
+                tellUruk(randomUruk)<br>
+            });<br>
+        </h5>
     </main>
     <footer>
         <label for="fname">Press this button for red -></label>
