@@ -3,7 +3,7 @@ function changeBodyBg(color) {
 }
 
 var output = document.getElementById('tellUruk')
-var btnUruk = document.getElementsByClassName('urukQuote')
+var btnUruk = document.getElementsByTagName('button')[0];
 
 function tellUruk(uruk) {
     output.innerHTML = `Heres a quote: ${uruk}`
