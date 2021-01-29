@@ -14,10 +14,21 @@ var user = {
     isEvil: false,
     shoutout: function() {
         alert(`Shoutout to y'all!`);
+    },
+    levelUp: function() {
+        return this.age++;
     } 
 };
- 
-document.writeln(`<br>My name is ${user.name} and I am ${user.age} and I live in ${user.city}`);
+
+var oldBtn = document.querySelector(".aging");
+oldBtn.addEventListener('click', function() {
+    firstOutput.innerHTML = `<br>My name is ${user.name} and I am ${user.levelUp()} and I live in ${user.city}`
+})
+
+var firstOutput = document.getElementById("userInfo");
+firstOutput.innerHTML += `<br>My name is ${user.name} and I am ${user.age} and I live in ${user.city}`
+
+//document.writeln(`<br>My name is ${user.name} and I am ${user.age} and I live in ${user.city}`);
 // user.shoutout();
  
 for(var i = 0; i < user.friends.length; i++) {
@@ -29,9 +40,9 @@ user.friends.forEach(function(friend) {
     console.log(friend)
 })
  
-console.log(user.age)
-user.age++;
-console.log(user.age)
+//console.log(user.age)
+//user.age++;
+//console.log(user.age)
  
 var posts = [
     {
@@ -56,7 +67,12 @@ posts.forEach(function(post) {
 })
 
 
-
+var input = document.querySelector(".updateCity")
+input.addEventListener('keydown', function(e) {
+    if(e.key === 'Enter'){
+        alert("You clicked enter!");
+    }
+})
 
 
 

@@ -1,1 +1,36 @@
 @charset "utf-8";
+
+
+body {
+    background-color: darkcyan;
+}
+/*
+************************
+        Object.html
+************************
+*/
+ 
+.container{
+    display: flex;
+}
+
+#firstOutput, .posts {
+    min-height: 300px;
+    flex: 1;
+    border: 10px double black;
+    box-shadow: inset 2px 2px 10px black, 2px 2px 10px black;
+    padding: 20px;
+}
+
+.updateCity {
+    width: 250px;
+    height: 16px;
+    border: none;
+    outline: none;
+    transition: all .4s;
+}
+
+.updateCity:focus {
+    width: 500px;
+    height: 24px;
+}
