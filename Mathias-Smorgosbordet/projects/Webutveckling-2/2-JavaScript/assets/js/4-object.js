@@ -113,7 +113,7 @@ var movies = [
 
 
 var movie = document.querySelector(".movieWork");
-movieWork.forEach(function(movies) {
+movies.forEach(function(movie) {
     movie.innerHTML += `Movie: `
 })
 
