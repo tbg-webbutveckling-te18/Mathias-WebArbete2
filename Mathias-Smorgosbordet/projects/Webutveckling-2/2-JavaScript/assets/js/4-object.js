@@ -68,11 +68,56 @@ posts.forEach(function(post) {
 
 
 var input = document.querySelector(".updateCity")
+var city = document.querySelector(".posts .city")
 input.addEventListener('keydown', function(e) {
     if(e.key === 'Enter'){
-        alert("You clicked enter!");
+        city.innerHTML = input.value;
+        document.body.style.backgroundColor = '#007CF7'
+        //document.body.style.transform += 'rotateX(100deg)';
     }
 })
+
+var toggle = document.querySelector(".btnToggle");
+toggle.addEventListener("click", function() {
+    //Bad way
+    //city.style.fontweight = "bold";
+    //city.style.fontSize = "32px";
+    //city.style.color = "purple";
+    //city.style.textShadow = "2px 2px 0px #000";
+
+    //Good way
+    //classList.add("");
+    //classList.remove("");
+    city.classList.toggle("changeText");
+})
+
+/*
+***************************************
+Create your own code - movieDB
+***************************************
+*/
+// Create an array of movie objects
+// Each movie should have a title, rating and hasWatched properties
+// Iterate through the array with a forEach and print out something that looks like:
+/* 
+   - You have seen "Frozen" - 4.5 stars
+   - You have not seen "Django" - 5 stars
+   - You have seen "Vaiana" - 5 stars
+   - You have not seen "Shawshank Redemption" - 5 stars
+*/
+var movies = [
+    {
+        film: "The Grinch"
+    }
+]
+
+
+var movie = document.querySelector(".movieWork");
+movieWork.forEach(function(movies) {
+    movie.innerHTML += `Movie: `
+})
+
+
 
 
 
