@@ -42,3 +42,11 @@ body {
     font-size: 32px;
     letter-spacing: 4px;
 }
+
+.movieWork {
+    min-height: 300px;
+    flex: 1;
+    border: 10px double black;
+    box-shadow: inset 2px 2px 10px black, 2px 2px 10px black;
+    padding: 20px;
+}

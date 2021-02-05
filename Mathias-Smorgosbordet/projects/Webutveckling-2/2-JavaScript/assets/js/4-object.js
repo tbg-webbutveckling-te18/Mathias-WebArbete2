@@ -107,15 +107,77 @@ Create your own code - movieDB
 */
 var movies = [
     {
-        film: "The Grinch"
+        film: "The Grinch (2000)",
+        seen: "I have seen it alot",
+        rating: "My rating: 8/10 IMDB: 6,2/10"
+    },
+    {
+        film: "Pitch Black",
+        seen: "I have not seen it",
+        rating: "IMDB: 7,1/10"
+    },
+    {
+        film: "The adventures of Tintin (2011)",
+        seen: "I have seen it",
+        rating: "My rating: 7,5/10 IMDB: 7,3/10"
     }
 ]
 
 
-var movie = document.querySelector(".movieWork");
+var movieOutPut = document.querySelector(".movieWork");
 movies.forEach(function(movie) {
-    movie.innerHTML += `Movie: `
+    movieOutPut.innerHTML += `Movie: ${movie.film} <br> Watch: ${movie.seen} <br> Rate: ${movie.rating} <br>--------<br>`
 })
+
+var opc = document.querySelector("#outputCalc");
+var countObj = {
+    someText: "This is some text",
+    count: function(x, y){
+        return x * y;
+    },
+    multidivide: function(x, y, z){
+        return x * y / z;
+    }
+}
+
+//opc.innerHTML = countObj.count(10, 5);
+
+//opc.innerHTML = countObj.multidivide(9, 3, 4);
+
+var outputSound = document.querySelector(".animalSound");
+var btnAnimal = document.querySelectorAll(".btnAnimal");
+
+var animalSound = {
+    dog: function() {
+        outputSound.innerHTML = "Voff Voff!";
+    },
+    cat: function() {
+        outputSound.innerHTML = "Meow!";
+    },
+    wolf: function() {
+        outputSound.innerHTML = "Aooooouuuuu!";
+    },
+    cow: function() {
+        outputSound.innerHTML = "Moooooo!";
+    }
+}
+
+for(var i = 0; i < btnAnimal.length; i++) {
+    btnAnimal[i].addEventListener("click", function(){
+        switch (this.innerHTML) {
+            case "Dog": {
+                animalSound.dog();
+                break;
+            }
+        }
+    })
+}
+
+
+
+
+
+
 
 
 
