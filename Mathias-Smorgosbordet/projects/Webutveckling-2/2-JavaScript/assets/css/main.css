@@ -20,6 +20,7 @@ body {
     border: 10px double black;
     box-shadow: inset 2px 2px 10px black, 2px 2px 10px black;
     padding: 20px;
+    align-items: flex-start;
 }
 
 .updateCity {
@@ -49,4 +50,19 @@ body {
     border: 10px double black;
     box-shadow: inset 2px 2px 10px black, 2px 2px 10px black;
     padding: 20px;
+}
+
+.toggleBtnBG {
+    background-color: coral;
+}
+
+/*
+*******************************************
+                Utility Classes
+*******************************************
+*/
+
+.addFlex {
+    display: flex;
+    flex-flow: row wrap;
 }

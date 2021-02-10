@@ -169,18 +169,59 @@ for(var i = 0; i < btnAnimal.length; i++) {
                 animalSound.dog();
                 break;
             }
+            case "Cat": {
+                animalSound.cat();
+                break;
+            }
+            case "Wolf": {
+                animalSound.wolf();
+                break;
+            }
+            case "Cow": {
+                animalSound.cow();
+                break;
+            }
         }
+    })
+    btnAnimal[i].addEventListener('mouseover', function() {
+        this.style.backgroundColor = "purple";
+    })
+
+    btnAnimal[i].addEventListener('mouseleave', function() {
+        this.style.backgroundColor = "";
     })
 }
 
+var addFriend = document.querySelector(".friend")
+var removeFriend = document.querySelector(".unfriend")
+
+var users = {
+    friends: ['Arnold', 'Stallone', 'Chuck'],
+    addFriend: function(friend) {
+        this.friends.push(friend);
+    },
+    removeFriend: function() {
+        this.friends.pop();
+    }
+}
 
 
+addFriend.addEventListener("click", function() {
+    users.addFriend(prompt('Add friends name'));
+    console.log('New friend added')
+});
 
+removeFriend.addEventListener("click", function() {
+    users.removeFriend();
+    console.log("One friend removed")
+});
 
+var btnDoomed = document.querySelector(".doomed");
 
+//function youAreDoomed() {
 
+//}
 
+youAreDoomed = () => document.body.innerHTML = "Haha! Owned!";
 
-
-
-
+btnDoomed.addEventListener("click", youAreDoomed)
