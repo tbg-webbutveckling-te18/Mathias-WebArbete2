@@ -56,6 +56,29 @@ body {
     background-color: coral;
 }
 
+.todo{
+    list-style: none;
+    padding: 0;
+    width: 30%;
+}
+
+.todo li {
+    font-size: 20px;
+    height: 25px;
+    background-color: #452353;
+    text-align: center;
+    border-bottom: 1px #b553db solid;
+}
+
+li.todo-hover {
+    background-color: #b553db;
+}
+
+li.todo-complete {
+    text-decoration: line-through;
+    background-color: #17ac3c;
+}
+
 /*
 *******************************************
                 Utility Classes
