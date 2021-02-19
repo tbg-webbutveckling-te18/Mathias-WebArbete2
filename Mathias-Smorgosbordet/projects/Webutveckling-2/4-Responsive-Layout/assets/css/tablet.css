@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+header {
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+}
+
+header h1 {
+    flex: 0;
+}
+
+nav {
+    flex: 0;
+    width: 100vw;
+    justify-content: center;
+}
+
+.span-logo {
+    color: darkmagenta;
+}
+
+main {
+    flex-direction: column;
+}
+
+.mainleft {
+    order: 2;
+}
+
+.maincenter {
+    order: 1;
+}
+
+.mainright {
+    order: 3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
