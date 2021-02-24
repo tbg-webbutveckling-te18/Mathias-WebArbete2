@@ -25,6 +25,7 @@ main {
 
 .mainleft {
     order: 2;
+    min-height: 250px;
 }
 
 .maincenter {
@@ -33,6 +34,7 @@ main {
 
 .mainright {
     order: 3;
+    min-height: 250px;
 }
 
 

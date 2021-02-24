@@ -35,7 +35,7 @@ header h1{
     flex: 1;
 }
 
-.mobileicon {
+.mobile-icon, .mobile-close-icon {
     display: none;
 }
 
