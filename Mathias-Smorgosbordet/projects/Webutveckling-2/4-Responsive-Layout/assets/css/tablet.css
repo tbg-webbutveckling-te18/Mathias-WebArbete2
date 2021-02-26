@@ -24,12 +24,13 @@ main {
 }
 
 .mainleft {
-    order: 2;
+    order: 1;
     min-height: 250px;
 }
 
 .maincenter {
-    order: 1;
+    order: 2;
+    background-color: darkviolet;
 }
 
 .mainright {

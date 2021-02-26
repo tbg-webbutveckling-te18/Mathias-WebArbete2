@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 body {
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 header {
@@ -55,6 +55,14 @@ header {
 
 .mobile-menu li:hover {
     background-color: indigo;
+}
+
+iframe {
+    width: 400;
+}
+
+.maincenter {
+    background-color: darkorange;
 }
 
 .mainleft {
