@@ -33,9 +33,18 @@ main {
     background-color: darkviolet;
 }
 
+iframe {
+    width: 100%;
+}
+
 .mainright {
     order: 3;
     min-height: 250px;
+}
+
+.kiryu {
+    position: absolute;
+    right: 170px;
 }
 
 
